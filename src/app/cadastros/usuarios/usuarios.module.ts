@@ -9,6 +9,11 @@ import { UsuarioDetalheComponent } from './usuario-detalhe/usuario-detalhe.compo
   imports: [
     CommonModule
   ],
-  declarations: [UsuarioListaComponent, UsuarioEditComponent, UsuarioNovoComponent, UsuarioDetalheComponent]
+  declarations: [
+    UsuarioListaComponent, 
+    UsuarioEditComponent, 
+    UsuarioNovoComponent, 
+    UsuarioDetalheComponent
+    ]
 })
 export class UsuariosModule { }
