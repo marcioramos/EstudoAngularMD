@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { UsuariosRoutingModule } from './usuarios.routing.module';
+import { UsuariosService } from './usuarios.service';
+
 import { UsuarioListaComponent } from './usuario-lista/usuario-lista.component';
 import { UsuarioEditComponent } from './usuario-edit/usuario-edit.component';
 import { UsuarioNovoComponent } from './usuario-novo/usuario-novo.component';
@@ -7,13 +11,20 @@ import { UsuarioDetalheComponent } from './usuario-detalhe/usuario-detalhe.compo
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    UsuariosRoutingModule
+  ],
+  exports: [
+
   ],
   declarations: [
-    UsuarioListaComponent, 
-    UsuarioEditComponent, 
-    UsuarioNovoComponent, 
+    UsuarioListaComponent,
+    UsuarioEditComponent,
+    UsuarioNovoComponent,
     UsuarioDetalheComponent
-    ]
+  ],
+  providers: [
+    UsuariosService
+  ]
 })
 export class UsuariosModule { }

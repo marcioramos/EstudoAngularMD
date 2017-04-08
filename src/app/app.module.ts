@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
+import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './sistema/login/login.component';
 import { HomeComponent } from './sistema/home/home.component';
@@ -20,7 +21,8 @@ import { HomeComponent } from './sistema/home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
