@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  
+
+  // items: string[] = [
+  //   'Pepper',
+  //   'Salt',
+  //   'Paprika'
+  // ];
+
+   links: any[] = [
+     { Descricao: 'Início', Link: ''},
+    { Descricao: 'Login', Link: '/login'},
+    { Descricao: 'Perfis', Link: '/perfis'},
+    { Descricao: 'Usuários', Link: '/usuarios'},
+    { Descricao: 'Produtos', Link: ''},
+    { Descricao: 'Movimentações', Link: ''}
+
+  ];
+
+  constructor() {}
+
+
 }

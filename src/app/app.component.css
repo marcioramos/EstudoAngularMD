@@ -1,7 +1,8 @@
 
 md-sidenav {
   width: 200px;
-  background-color: cornflowerblue;
+  /*background-color: cornflowerblue;*/
+  background-color: lightblue;
 }
 
 .spacer {

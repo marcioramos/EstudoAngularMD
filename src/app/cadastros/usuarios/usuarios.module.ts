@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 import { UsuariosRoutingModule } from './usuarios.routing.module';
 import { UsuariosService } from './usuarios.service';
 
@@ -12,6 +15,7 @@ import { UsuarioDetalheComponent } from './usuario-detalhe/usuario-detalhe.compo
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule.forRoot(),
     UsuariosRoutingModule
   ],
   exports: [

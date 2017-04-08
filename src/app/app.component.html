@@ -30,14 +30,18 @@
 
 <md-sidenav-container class="example-container">
   <md-sidenav #sidenav mode="side" class="app-sidenav">
-    
+
     <ul>
       <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
       <li routerLinkActive="active"><a routerLink="/perfis">Perfis</a></li>
       <li routerLinkActive="active"><a routerLink="/usuarios">Usuários</a></li>
     </ul>
 
-
+    <md-nav-list>
+        <a md-list-item *ngFor="let link of links" routerLinkActive="active" [routerLink]="link.Link">
+        {{ link.Descricao }}
+      </a>
+      </md-nav-list>
 
   </md-sidenav>
 
