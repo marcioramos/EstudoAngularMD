@@ -15,7 +15,7 @@ import { UsuarioDetalheComponent } from './usuario-detalhe/usuario-detalhe.compo
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     UsuariosRoutingModule
   ],
   exports: [
