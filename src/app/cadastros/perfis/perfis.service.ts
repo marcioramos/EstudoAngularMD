@@ -13,11 +13,11 @@ export class PerfisService {
 
   constructor() { }
 
-  getLista(): Perfil[] {
+  getPerfis(): Perfil[] {
     return this.lista;
   }
 
-  getUsuario(idPerfil: number) {
+  getPerfil(idPerfil: number) {
 
     this.lista.forEach(element => {
       if (element.IdPerfil == idPerfil) {

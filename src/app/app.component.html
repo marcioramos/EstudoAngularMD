@@ -31,64 +31,48 @@
 <md-sidenav-container class="app-container">
   <md-sidenav #sidenav mode="side" class="app-sidenav">
 
-    <ul>
+    <!--<ul>
       <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
       <li routerLinkActive="active"><a routerLink="/perfis">Perfis</a></li>
       <li routerLinkActive="active"><a routerLink="/usuarios">Usuários</a></li>
     </ul>
 
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]="{ pagina: 1 }">Cursos</a></li>
+      <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
+    </ul>-->
+
     <md-nav-list>
-      <a md-list-item *ngFor="let link of links" routerLinkActive="active" [routerLink]="link.Link">
-        {{ link.Descricao }}
+      <a md-list-item *ngFor="let item of links" routerLinkActive="active" [routerLink]="item.Link">
+        {{ item.Descricao }}
       </a>
     </md-nav-list>
 
   </md-sidenav>
 
   <div class="app-sidenav-content">
-
     <router-outlet></router-outlet>
-
-    <!--<md-card>
-      <button md-button (click)="sidenav.toggle()">Open</button>
-      <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-      <button md-raised-button color="primary">PRIMARY RAISED</button>
-      <button md-raised-button color="accent">ACCENT RAISED</button>
-    </md-card>-->
-
-    <!--<md-card>
-      <md-checkbox>Unchecked</md-checkbox>
-      <md-checkbox [checked]="true">Checked</md-checkbox>
-      <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-      <md-checkbox [disabled]="true">Disabled</md-checkbox>
-    </md-card>
-
-    <md-card>
-      <md-radio-button name="symbol">Alpha</md-radio-button>
-      <md-radio-button name="symbol">Beta</md-radio-button>
-      <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-    </md-card>-->
-
   </div>
 
 </md-sidenav-container>
 
 <!--<md-card>
-      <button md-button (click)="sidenav.toggle()">Open</button>
-      <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-      <button md-raised-button color="primary">PRIMARY RAISED</button>
-      <button md-raised-button color="accent">ACCENT RAISED</button>
-    </md-card>
+  <button md-button (click)="sidenav.toggle()">Open</button>
+  <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+  <button md-raised-button color="primary">PRIMARY RAISED</button>
+  <button md-raised-button color="accent">ACCENT RAISED</button>
+</md-card>
 
-    <md-card>
-      <md-checkbox>Unchecked</md-checkbox>
-      <md-checkbox [checked]="true">Checked</md-checkbox>
-      <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-      <md-checkbox [disabled]="true">Disabled</md-checkbox>
-    </md-card>
+<md-card>
+  <md-checkbox>Unchecked</md-checkbox>
+  <md-checkbox [checked]="true">Checked</md-checkbox>
+  <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
+  <md-checkbox [disabled]="true">Disabled</md-checkbox>
+</md-card>
 
-    <md-card>
-      <md-radio-button name="symbol">Alpha</md-radio-button>
-      <md-radio-button name="symbol">Beta</md-radio-button>
-      <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-    </md-card>-->
+<md-card>
+  <md-radio-button name="symbol">Alpha</md-radio-button>
+  <md-radio-button name="symbol">Beta</md-radio-button>
+  <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
+</md-card>-->

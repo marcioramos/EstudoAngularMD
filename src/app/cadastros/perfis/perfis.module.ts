@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MaterialModule } from '@angular/material'
+import 'hammerjs';
+
 import { PerfisRoutingModule } from './perfis.routing.module';
 import { PerfisService } from './perfis.service';
 
@@ -12,6 +15,7 @@ import { PerfilEditComponent } from './perfil-edit/perfil-edit.component';
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
     PerfisRoutingModule
   ],
   declarations: [
